@@ -1,26 +1,26 @@
 # WPF ZooManager
 
-## Überblick
-WPF ZooManager ist eine Windows Presentation Foundation (WPF) Anwendung zur Verwaltung eines Zoos. Sie ermöglicht die Verwaltung von Zoos und Tieren und ist mit einer Microsoft SQL Server 2022 Express Datenbank verknüpft.
+## Overview
+WPF ZooManager is a Windows Presentation Foundation (WPF) application for managing a zoo. It enables the management of zoos and animals and is linked to a Microsoft SQL Server 2022 Express database.
 
-## Funktionen
-- Anzeigen aller Zoos in der Datenbank
-- Anzeigen aller Tiere in der Datenbank
-- Anzeigen der einem Zoo zugeordneten Tiere
-- Hinzufügen, Löschen und Bearbeiten von Zoos
-- Hinzufügen, Löschen und Bearbeiten von Tieren
-- Zuordnen und Entfernen von Tieren zu einem Zoo
+## Functions
+- Show all zoos in the database
+- Show all animals in the database
+- Display the animals assigned to a zoo
+- Adding, deleting and editing zoos
+- Adding, deleting and editing animals
+- Assigning and removing animals to a zoo
 
-## Voraussetzungen
-- Windows-Betriebssystem
+## Requirements
+- Windows operating system
 - Microsoft SQL Server 2022 Express
-- .NET Framework (empfohlen: .NET 6 oder höher)
-- Visual Studio mit WPF-Unterstützung
+- .NET Framework (recommended: .NET 6 or higher)
+- Visual Studio with WPF support
 
-## Einrichtung
-### 1. Datenbank einrichten
-1. Installiere Microsoft SQL Server 2022 Express und SQL Server Management Studio (SSMS).
-2. Erstelle eine Datenbank mit folgendem Schema:
+## Setup
+### 1. set up the database
+1. install Microsoft SQL Server 2022 Express and SQL Server Management Studio (SSMS).
+2. create a database with the following schema:
    ```sql
    CREATE TABLE [dbo].[Zoo] (
     [Id]       INT           IDENTITY (1, 1) NOT NULL,
@@ -44,10 +44,10 @@ WPF ZooManager ist eine Windows Presentation Foundation (WPF) Anwendung zur Verw
     );
    ```
 
-### 2. Anwendung starten
-1. Klone oder lade das Projekt herunter.
-2. Öffne das Projekt in Visual Studio.
-3. Stelle sicher, dass die Verbindungszeichenfolge in `App.config` korrekt auf die SQL Server-Datenbank verweist:
+### 2. start the application
+1. clone or download the project.
+2. open the project in Visual Studio.
+3. make sure that the connection string in `App.config` points correctly to the SQL Server database:
    ```xml
    <connectionStrings>
        <add name="WPF_ZooManager.Properties.Settings.CSharpTutorialDBConnectionString"
@@ -55,21 +55,20 @@ WPF ZooManager ist eine Windows Presentation Foundation (WPF) Anwendung zur Verw
             providerName="System.Data.SqlClient" />
    </connectionStrings>
    ```
-4. Baue und starte das Projekt.
+4. build and start the project.
 
-## Bedienung
-- Beim Start der Anwendung werden alle Zoos und Tiere aus der Datenbank geladen.
-- Durch Auswahl eines Zoos werden die mit diesem Zoo verknüpften Tiere angezeigt.
-- Neue Zoos oder Tiere können über das Textfeld und die entsprechenden Buttons hinzugefügt werden.
-- Zoos oder Tiere können bearbeitet oder gelöscht werden.
-- Tiere können einem Zoo zugeordnet oder entfernt werden.
+## Operation
+- When the application is started, all zoos and animals are loaded from the database.
+- By selecting a zoo, the animals linked to this zoo are displayed.
+- New zoos or animals can be added using the text field and the corresponding buttons.
+- Zoos or animals can be edited or deleted.
+- Animals can be assigned to a zoo or removed.
 
-## Fehlerbehandlung
-- Falls SQL Server nicht erreichbar ist, erscheint eine Fehlermeldung.
-- Falls ungültige Eingaben gemacht werden (z. B. leere Namen), erfolgt keine Datenbankänderung.
+## Error handling
+- If SQL Server is not available, an error message appears.
+- If invalid entries are made (e.g. empty names), the database will not be changed.
 
-## Videopräsentation des Projektes 
-
+## Video presentation of the project 
 [![WPFZooManager](https://youtu.be/7aecUFGySpM)](https://www.youtube.com/watch?v=7aecUFGySpM)
 
 
