@@ -69,7 +69,8 @@ WPF ZooManager is a Windows Presentation Foundation (WPF) application for managi
 - If invalid entries are made (e.g. empty names), the database will not be changed.
 
 ## Video presentation of the project 
-[![WPFZooManager](https://youtu.be/7aecUFGySpM)](https://www.youtube.com/watch?v=7aecUFGySpM)
+[![Video anschauen](https://img.youtube.com/vi/7aecUFGySpM/0.jpg)](https://www.youtube.com/watch?v=7aecUFGySpM)
+
 
 
 
