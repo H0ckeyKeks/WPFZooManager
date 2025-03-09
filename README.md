@@ -70,7 +70,7 @@ WPF ZooManager ist eine Windows Presentation Foundation (WPF) Anwendung zur Verw
 
 ## Videopräsentation des Projektes 
 
-[![WPFZooManager]([https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/7aecUFGySpM))
+[![WPFZooManager](https://youtu.be/7aecUFGySpM)](https://www.youtube.com/watch?v=7aecUFGySpM))
 
 
 
